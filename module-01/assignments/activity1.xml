@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Input>
+
+        <Person>
+        <Name> Devansh Shah </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Devarsh Desai </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Mann Bhatt </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Dhrumit Shah </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Geetika Prasher </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Dhruv Desai </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Abhay Nimavat </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Heli Kheni </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Parth Lukhi </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+
+        <People>
+        <Name> Bhavish Rohilla </Name>
+        <Interest> Trecking, Cooking </Interest>
+        <Hobbies> Teaching, Travelling </Hobbies>
+        </Person>
+</Input>
