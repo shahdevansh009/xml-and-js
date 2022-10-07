@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity - Week 5</title>
+</head>
+<body>
+    <ul id = "activity"></ul>
+    <script>
+
+        //Step 1: Load
+        const xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          displayData(this.responseXML);
+        }
+      };
+      xhttp.open("GET", "activity.xml", true);
+      xhttp.send();
+
+      //Step 2: Parse
+
+      function stringToNode(html) {
+        const template = document.createElement(`template`);
+        html = html.trim();
+        template.innerHTML = html;
+        return template.content.firstChild;
+      }
+
+    //Step 3: Display
+    function displayData(xmlDoc) {
+        const listElement = document.getElementById(`activity`);
+
+        const peopleNodes = xmlDoc.getElementsByTagName(`people`);
+        for (let index = 0; index < peopleNodes.length; index++) {
+          const peopleNode = peopleNodes[index];
+          const listItem = stringToNode(`<li>
+            <h2>${
+              peopleNode.getElementsByTagName(`firstName`)[0].childNodes[0]
+                .nodeValue
+            } ${
+            peopleNode.getElementsByTagName(`lastName`)[0].childNodes[0]
+              .nodeValue
+          }
+          <p>Gmail: ${ peopleNode.getElementsByTagName(`gender`)[0].childNodes[0].nodeValue}</p>
+          <p>Gender: ${ peopleNode.getElementsByTagName(`gender`)[0].childNodes[0].nodeValue}</p>
+          <p>IP Address: ${ peopleNode.getElementsByTagName(`ipAddress`)[0].childNodes[0].nodeValue}</p>
+
+          </li>`);
+          listElement.appendChild(listItem);
+        }
+        }
+
+    </script>   
+</body>
+</html>
